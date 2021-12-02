@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player</title>
+
+  <!-- Local Stylesheets -->
+  <link rel="stylesheet" href="assets/css/global.css">
+
+  <!-- Local Scripts -->
+  <script src="assets/js/router.js" type="module"></script>
+  <script src="assets/js/app.js" type="module"></script>
+</head>
+<body>
+
+  
+  <!-- Core collapsible header for the app -->
+  <header id="app--header"></header>
+
+
+  <!-- Omnipresent application sidebar - navigation & playlists -->
+  <nav id="app--sidebar">
+
+    <!-- Upper navigation section - non-playlist related -->
+    <section id="sidebar--upper-nav">
+
+      <!-- Spotify icon nav to home -->
+      <a href="/" title="Spotify">
+        <img src="../media/images/home-logo.svg" alt="Spotify logo">
+      </a>
+
+      <!-- Core nav buttons - Home / Search / Your Library -->
+      <div id="sidebar--core-nav">
+        <sp-nav-button>
+          <span slot="icon">../media/icons/home.svg</span>
+          <span slot="icon-alt">House</span>
+          <span slot="text">Home</span>
+        </sp-nav-button>
+        <sp-nav-button>
+          <span slot="icon">../media/icons/magnifying-glass.svg</span>
+          <span slot="icon-alt">Magnifying glass</span>
+          <span slot="text">Search</span>
+        </sp-nav-button>
+        <sp-nav-button>
+          <span slot="icon">../media/icons/books.svg</span>
+          <span slot="icon-alt">Books on bookshelf</span>
+          <span slot="text">Your Library</span>
+        </sp-nav-button>
+      </div>
+
+      <!-- Create Playlist & Liked Songs -->
+      <div id="sidebar--create-and-liked">
+        <sp-nav-button>
+          <span slot="icon">../media/icons/add--square-solid.svg</span>
+          <span slot="icon-alt">Plus sign</span>
+          <span slot="text">Create Playlist</span>
+        </sp-nav-button>
+        <sp-nav-button>
+          <span slot="icon">../media/icons/heart--square-gradient.svg</span>
+          <span slot="icon-alt">Heart</span>
+          <span slot="text">Liked Songs</span>
+        </sp-nav-button>
+      </div>
+
+    </section>
+
+    <!-- Playlist navigation section -->
+    <section id="sidebar--playlist-nav">
+
+      <!-- 
+        These will be programmatically generated, this is an example:
+
+        <sp-nav-playlist>
+          <span slot="title">Discover Weekly</span>
+          <span slot="route">/playlist/abcde...</span>
+        </sp-nav-playlist> 
+      -->
+
+    </section>
+  </nav>
+
+
+  <!-- Main Content - Where all of the routes will be displayed -->
+  <main id="app--main">
+
+  </main>
+
+
+  <footer id="app--player-control-bar">
+
+    <!-- The song information, his will be programmatically filled in -->
+    <sp-song-info>
+      <span slot="image-url"></span>
+      <span slot="title"></span>
+      <span slot="artist"></span>
+      <span slot="liked"></span>
+    </sp-song-info>
+
+    <!-- The player controls (pause / play / skip / etc) -->
+    <sp-player-controls>
+      <!-- Must be in 00:00 (or 00:00:00) format, leading 0 not necessary -->
+      <span slot="length">0:00</span>
+    </sp-player-controls>
+
+    <!-- Controls for volume and output device, misc
+         is queue, lyric, and fullscreens buttons -->
+    <sp-misc-controls>
+      <!-- Value must be between 0 and 100 -->
+      <span slot="volume">100</span>
+    </sp-misc-controls>
+
+  </footer>
+</body>
+</html>
