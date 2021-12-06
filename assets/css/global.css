@@ -61,8 +61,15 @@ html, #app {
   width: var(--sidebar-width);
 }
 
+#sidebar--core-nav sp-nav-button {
+  display: block;
+}
+
+#sidebar--core-nav sp-nav-button:not(:last-child) {
+  margin: var(--sidebar--core-btn-margin);
+}
+
 /* DELETE Start - These are temp styles */
-#sidebar--core-nav,
 #sidebar--create-and-liked,
 footer > * {
   display: none;
@@ -70,12 +77,12 @@ footer > * {
 /* DELETE End - These are temp styles  */
 
 #sidebar--home-link {
+  margin-bottom: 28px;
   display: block;
   width: var(--sidebar--home-link-width);
 }
 
-#sidebar--home-link svg {
-  color: white;
+#sidebar--home-link img {
   height: var(--sidebar--home-svg-height);
   width: var(--sidebar--home-svg-width);
 }
