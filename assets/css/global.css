@@ -1,5 +1,108 @@
 /* global.css */
 
+@import './vars.css';
+
+/**************************************/
+/*** GLOBAL - Generic Global Styles ***/
+/**************************************/
+
 * {
   font-family: sans-serif;
 }
+
+/*****************************/
+/*** APP - Main App Styles ***/
+/*****************************/
+
+html, #app {
+  background-color: var(--bg-main);
+  height: var(--main-height);
+  margin: var(--main-margin);
+  padding: var(--main-padding);
+  width: var(--main-width);
+}
+
+#app {
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "player player";
+  grid-template-columns: var(--sidebar-width) auto;
+  grid-template-rows: var(--header-height) auto var(--player-height);
+}
+
+#app--main {
+  grid-area: main;
+  height: var(--main-height);
+  width: var(--main-width);
+}
+
+/******************************/
+/*** HEADER - Header Styles ***/
+/******************************/
+
+#app--header {
+  grid-area: header;
+  height: var(--header-height);
+  width: var(--header-width);
+}
+
+/********************************/
+/*** SIDEBAR - Sidebar Styles ***/
+/********************************/
+
+#app--sidebar {
+  background-color: var(--bg-sidebar);
+  box-sizing: border-box;
+  display: block;
+  height: var(--sidebar-height);
+  grid-area: sidebar;
+  width: var(--sidebar-width);
+}
+
+/* DELETE Start - These are temp styles */
+#sidebar--core-nav,
+#sidebar--create-and-liked,
+footer > * {
+  display: none;
+}
+/* DELETE End - These are temp styles  */
+
+#sidebar--home-link {
+  display: block;
+  width: var(--sidebar--home-link-width);
+}
+
+#sidebar--home-link svg {
+  color: white;
+  height: var(--sidebar--home-svg-height);
+  width: var(--sidebar--home-svg-width);
+}
+
+#sidebar--upper-nav {
+  border-bottom: var(--border-thickness-2) solid var(--border-color);
+  height: var(--sidebar--upper-nav-height);
+  margin: var(--sidebar--upper-nav-margin);
+}
+
+/******************************************/
+/*** FOOTER - Player Control Bar Styles ***/
+/******************************************/
+
+#app--player-control-bar {
+  align-self: flex-end;
+  background-color: var(--bg-player);
+  border-top: var(--border-thickness-1) solid var(--border-color);
+  box-sizing: border-box;
+  display: block;
+  height: var(--player-height);
+  grid-area: player;
+  width: var(--player-width);
+}
+
+/***********************************/
+/*** MISCELLANEOUS - Misc Styles ***/
+/***********************************/
+
+/* TODO */

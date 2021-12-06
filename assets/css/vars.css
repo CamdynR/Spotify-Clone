@@ -1,0 +1,57 @@
+/* vars.css */
+
+:root {
+  
+  /**************/
+  /*** SIZING ***/
+  /**************/
+
+  /*** main app ***/
+  --main-height: 100%;
+  --main-margin: 0;
+  --main-padding: 0;
+  --main-width: 100%;
+
+  /*** header ***/
+  --header-height: 64px;
+  --header-width: 100%;
+
+  /*** sidebar ***/
+  /* sidebar - main */
+  --sidebar-height: 100%;
+  --sidebar-width: 241px;
+  /* sidebar - upper-nav */
+  --sidebar--upper-nav-margin: 24.26px 24px 0;
+  --sidebar--upper-nav-height: 296px;
+  /* sidebar - home-link */
+  --sidebar--home-link-width: calc(100% - 48px);
+  /* sidebar - home-link svg */
+  --sidebar--home-svg-height: 39.35px;
+  --sidebar--home-svg-width: auto;
+
+  /*** player ***/
+  --player-height: 91px;
+  --player-width: 100%;
+
+  /*** misc ***/
+  --border-thickness-1: 1px;
+  --border-thickness-2: 1.5px;
+
+
+  /**************/
+  /*** COLORS ***/
+  /**************/
+  
+  /*** main ***/
+  --bg-main: #121212;
+
+  /*** sidebar ***/
+  --bg-sidebar: black;
+
+  /*** player ***/
+  /* player - main */
+  --bg-player: #181818;
+
+  /*** misc ***/
+  --border-color: #282828;
+}
