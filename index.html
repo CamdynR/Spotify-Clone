@@ -7,13 +7,17 @@
   <title>Spotify - Web Player</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/media/icons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/media/icons/favicon.ico" type="image/x-icon" />
 
+  <!-- Fonts -->
+  <!-- TODO -->
+  
   <!-- Local Stylesheets -->
-  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/global.css" />
 
   <!-- Components -->
   <script src="assets/components/sp-nav-button/component.js" type="module"></script>
+  <script src="assets/components/sp-nav-playlist/component.js" type="module"></script>
 
   <!-- Local Scripts -->
   <script src="assets/js/router.js" type="module"></script>
@@ -39,24 +43,27 @@
 
       <!-- Core nav buttons - Home / Search / Your Library -->
       <div id="sidebar--core-nav">
-        <sp-nav-button>
+        <sp-nav-button data-page="Home">
           <img slot="icon" 
                alt="House" 
                src="assets/media/icons/home.svg"
+               draggable="false"
           />
           <p slot="text">Home</p>
         </sp-nav-button>
-        <sp-nav-button>
+        <sp-nav-button data-page="Search">
           <img slot="icon" 
                 alt="Magnifying glass" 
                 src="assets/media/icons/magnifying-glass.svg"
+                draggable="false"
           />
           <p slot="text">Search</p>
         </sp-nav-button>
-        <sp-nav-button>
+        <sp-nav-button data-page="Library">
           <img slot="icon"
                alt="Books on bookshelf"
                src="assets/media/icons/books.svg"
+               draggable="false"
           />
           <p slot="text">Your Library</p>
         </sp-nav-button>
@@ -64,39 +71,35 @@
 
       <!-- Create Playlist & Liked Songs -->
       <div id="sidebar--create-and-liked">
-        <sp-nav-button>
-          <span slot="icon">assets/media/icons/add--square-solid.svg</span>
-          <span slot="icon-alt">Plus sign</span>
-          <span slot="text">Create Playlist</span>
+        <sp-nav-button data-page="Create Playlist">
+          <div slot="icon" class="icon-wrapper" draggable="false">
+            <img alt="Plus sign"
+                 src="assets/media/icons/plus.svg"
+                 draggable="false"
+            />
+          </div>
+          <p slot="text">Create Playlist</p>
         </sp-nav-button>
-        <sp-nav-button>
-          <span slot="icon">assets/media/icons/heart--square-gradient.svg</span>
-          <span slot="icon-alt">Heart</span>
-          <span slot="text">Liked Songs</span>
+        <sp-nav-button  data-page="Liked Songs" draggable="false">
+          <div slot="icon" class="icon-wrapper heart" draggable="false">
+            <img alt="Heart"
+                 src="assets/media/icons/heart.svg"
+                 draggable="false"
+            />
+          </div>
+          <p slot="text">Liked Songs</p>
         </sp-nav-button>
       </div>
 
     </section>
 
     <!-- Playlist navigation section -->
-    <section id="sidebar--playlist-nav">
-
-      <!-- Sidebar Playlist Navigation Template -->
-      <template id="temp--sp-nav-playlist">
-        <sp-nav-playlist>
-          <slot name="title">Discover Weekly</slot>
-          <slot name="route">/playlist/abcde...</slot>
-        </sp-nav-playlist> 
-      </template>
-
-    </section>
+    <section id="sidebar--playlist-nav"></section>
   </nav>
 
 
   <!-- Main Content - Where all of the routes will be displayed -->
-  <main id="app--main">
-
-  </main>
+  <main id="app--main"></main>
 
 
   <footer id="app--player-control-bar">

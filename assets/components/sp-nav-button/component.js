@@ -13,6 +13,18 @@ class SpNavButton extends HTMLElement {
       </a>
     `;
     this.shadowRoot.adoptedStyleSheets = [styles];
+
+    // Create a custom event to route to a specific page
+    const routePage = new CustomEvent('route page', {
+      detail: {
+        page: this.getAttribute('data-page')
+      }
+    });
+
+    // Dispatch the event with this element is clicked
+    this.addEventListener('click', () => {
+      this.dispatchEvent(routePage);
+    });
   }
 }
 

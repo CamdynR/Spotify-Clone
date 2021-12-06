@@ -61,16 +61,24 @@ html, #app {
   width: var(--sidebar-width);
 }
 
-#sidebar--core-nav sp-nav-button {
-  display: block;
+#sidebar--create-and-liked {
+  margin: var(--sidebar--create-liked-margin);
+}
+
+#sidebar--create-and-liked sp-nav-button:not(:last-child) {
+  margin: var(--sidebar--create-liked-spnb-margin);
 }
 
 #sidebar--core-nav sp-nav-button:not(:last-child) {
   margin: var(--sidebar--core-btn-margin);
 }
 
+#sidebar--playlist-nav {
+  margin: var(--sidebar--playlist-nav);
+  overflow-y: auto;
+}
+
 /* DELETE Start - These are temp styles */
-#sidebar--create-and-liked,
 footer > * {
   display: none;
 }
