@@ -10,12 +10,16 @@
   font-family: sans-serif;
 }
 
+body {
+  overscroll-behavior: none;
+}
+
 /*****************************/
 /*** APP - Main App Styles ***/
 /*****************************/
 
 html, #app {
-  background-color: var(--bg-main);
+  background-color: var(--main--bg);
   height: var(--main-height);
   margin: var(--main-margin);
   padding: var(--main-padding);
@@ -53,12 +57,15 @@ html, #app {
 /********************************/
 
 #app--sidebar {
-  background-color: var(--bg-sidebar);
+  background-color: var(--sidebar--bg);
   box-sizing: border-box;
   display: block;
-  height: var(--sidebar-height);
   grid-area: sidebar;
   width: var(--sidebar-width);
+}
+
+#sidebar--core-nav sp-nav-button:not(:last-child) {
+  margin: var(--sidebar--core-btn-margin);
 }
 
 #sidebar--create-and-liked {
@@ -69,23 +76,15 @@ html, #app {
   margin: var(--sidebar--create-liked-spnb-margin);
 }
 
-#sidebar--core-nav sp-nav-button:not(:last-child) {
-  margin: var(--sidebar--core-btn-margin);
-}
-
-#sidebar--playlist-nav {
-  margin: var(--sidebar--playlist-nav);
-  overflow-y: auto;
-}
-
 /* DELETE Start - These are temp styles */
-footer > * {
+footer>* {
   display: none;
 }
+
 /* DELETE End - These are temp styles  */
 
 #sidebar--home-link {
-  margin-bottom: 28px;
+  margin: var(--sidebar--home-link-margin);
   display: block;
   width: var(--sidebar--home-link-width);
 }
@@ -93,6 +92,34 @@ footer > * {
 #sidebar--home-link img {
   height: var(--sidebar--home-svg-height);
   width: var(--sidebar--home-svg-width);
+}
+
+#sidebar--playlist-nav {
+  box-sizing: border-box;
+  height: var(--sidebar--playlist-nav-height);
+  margin: var(--sidebar--playlist-nav-margin);
+  overflow-y: auto;
+}
+
+#sidebar--playlist-nav::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+#sidebar--playlist-nav::-webkit-scrollbar:vertical {
+  width: var(--sidebar--playlist-nav-sb-width);
+}
+
+#sidebar--playlist-nav::-webkit-scrollbar-thumb {
+  border-radius: var(--sidebar--playlist-nav-sb-border-rad);
+  border: none;
+  background-color: var(--sidebar--playlist-nav-bg);
+  cursor: pointer;
+  transition: var(--sidebar--playlist-nav-transition);
+}
+
+#sidebar--playlist-nav::-webkit-scrollbar-thumb:hover {
+  background-color: var(--sidebar--playlist-nav-bg-hov);
+  transition: var(--sidebar--playlist-nav-transition);
 }
 
 #sidebar--upper-nav {
@@ -107,7 +134,7 @@ footer > * {
 
 #app--player-control-bar {
   align-self: flex-end;
-  background-color: var(--bg-player);
+  background-color: var(--player--bg);
   border-top: var(--border-thickness-1) solid var(--border-color);
   box-sizing: border-box;
   display: block;

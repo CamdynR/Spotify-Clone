@@ -1,7 +1,7 @@
 /* vars.css */
 
 :root {
-  
+
   /**************/
   /*** SIZING ***/
   /**************/
@@ -24,6 +24,7 @@
   --sidebar--upper-nav-margin: 24.26px 24px 0;
   --sidebar--upper-nav-height: 296px;
   /* sidebar - home-link */
+  --sidebar--home-link-margin: 0 0 28px 0;
   --sidebar--home-link-width: calc(100% - 48px);
   /* sidebar - home-link svg */
   --sidebar--home-svg-height: 39.35px;
@@ -34,7 +35,10 @@
   /* sidebar - core nav */
   --sidebar--core-btn-margin: 0 0 17px 0;
   /* sidebar - playlist nav */
-  --sidebar--playlist-nav: 0 24px;
+  --sidebar--playlist-nav-height: 232px;
+  --sidebar--playlist-nav-margin: 0 5px 0 24px;
+  --sidebar--playlist-nav-sb-width: 8px;
+  --sidebar--playlist-nav-sb-border-rad: 8px;
 
   /*** player ***/
   --player-height: 91px;
@@ -48,17 +52,27 @@
   /**************/
   /*** COLORS ***/
   /**************/
-  
+
   /*** main ***/
-  --bg-main: #121212;
+  --main--bg: #121212;
 
   /*** sidebar ***/
-  --bg-sidebar: black;
+  --sidebar--bg: black;
+  --sidebar--playlist-nav-bg: rgba(255, 255, 255, .3);
+  --sidebar--playlist-nav-bg-hov: rgba(193, 193, 193, 0.5);
 
   /*** player ***/
   /* player - main */
-  --bg-player: #181818;
+  --player--bg: #181818;
 
   /*** misc ***/
   --border-color: #282828;
+
+
+  /************/
+  /*** MISC ***/
+  /************/
+
+  /*** sidebar ***/
+  --sidebar--playlist-nav-transition: 0.2s linear background-color;
 }

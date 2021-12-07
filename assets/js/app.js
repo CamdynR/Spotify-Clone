@@ -32,28 +32,52 @@ function getPlaylists() {
   return [{
     title: `Camdyn's Wrapped 2021`,
     route: ''
-  },{
+  }, {
     title: 'Spotify Wrapped 2021',
     route: ''
-  },{
+  }, {
     title: 'Discover Weekly',
     route: ''
-  },{
+  }, {
     title: 'Release Radar',
     route: ''
-  },{
+  }, {
     title: 'Fresh Finds',
     route: ''
-  },{
+  }, {
     title: 'Your Top Songs 2021',
     route: ''
-  },{
+  }, {
     title: 'Your Artists Revealed',
     route: ''
-  },{
+  }, {
     title: 'Brews or Brews',
     route: ''
-  },{
+  }, {
+    title: 'skrrt skrrt',
+    route: ''
+  }, {
+    title: 'Spotify Wrapped 2021',
+    route: ''
+  }, {
+    title: 'Discover Weekly',
+    route: ''
+  }, {
+    title: 'Release Radar',
+    route: ''
+  }, {
+    title: 'Fresh Finds',
+    route: ''
+  }, {
+    title: 'Your Top Songs 2021',
+    route: ''
+  }, {
+    title: 'Your Artists Revealed',
+    route: ''
+  }, {
+    title: 'Brews or Brews',
+    route: ''
+  }, {
     title: 'skrrt skrrt',
     route: ''
   }];

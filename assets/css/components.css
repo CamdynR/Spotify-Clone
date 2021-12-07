@@ -26,7 +26,7 @@
 .sp-nav-button ::slotted(p) {
   color: white !important;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   margin: -2px 0 0 0;
   padding: 0;
   text-align: left;
@@ -45,10 +45,14 @@
 }
 
 .sp-nav-button ::slotted(.icon-wrapper.heart) {
-  background: linear-gradient(135deg,#450af5,#c4efd9) !important;
+  background: linear-gradient(135deg, #450af5, #c4efd9) !important;
 }
 
 /*** <sp-nav-playlist> ***/
+
+:host(sp-nav-playlist) {
+  margin: 16px 0;
+}
 
 .sp-nav-playlist.root {
   color: white;
@@ -60,4 +64,9 @@
 .sp-nav-playlist.root:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+.sp-nav-playlist p {
+  font-weight: 100;
+  margin: 0;
 }
