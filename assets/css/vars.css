@@ -93,8 +93,8 @@
 
   /* ::slotted(p) */
   --sp-nav-btn--p-font-size: 14px;
-  --sp-nav-btn--p-font-weight: 600;
-  --sp-nav-btn--p-margin: -2px 0 0 0;
+  --sp-nav-btn--p-font-weight: 400;
+  --sp-nav-btn--p-margin: 2px 0 0 0;
   --sp-nav-btn--p-padding: 0;
 
   /* ::slotted(.icon-wrapper) */

@@ -15,14 +15,14 @@
   grid-template-areas: 'icon text';
   grid-template-columns: var(--sp-nav-btn--root-tmp-cols);
   justify-items: flex-start;
-  opacity: var(--sp-nav-btn--opacity);
-  transition: var(--sp-nav-btn--transition);
+  opacity: var(--sp-nav-btn--root-opacity);
+  transition: var(--sp-nav-btn--root-transition);
 }
 
 .sp-nav-button.root:hover {
   cursor: pointer;
-  opacity: var(--sp-nav-btn--opacity-hover);
-  transition: var(--sp-nav-btn--transition);
+  opacity: var(--sp-nav-btn--root-opacity-hover);
+  transition: var(--sp-nav-btn--root-transition);
 }
 
 .sp-nav-button ::slotted(p) {
