@@ -26,20 +26,21 @@ html, #app {
   width: var(--main-width);
 }
 
-#app {
-  display: grid;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main"
-    "player player";
-  grid-template-columns: var(--sidebar-width) auto;
-  grid-template-rows: var(--header-height) auto var(--player-height);
-}
-
 #app--main {
   grid-area: main;
   height: var(--main-height);
   width: var(--main-width);
+}
+
+#app-wrapper {
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  grid-template-columns: var(--sidebar-width) auto;
+  grid-template-rows: var(--header-height) auto var(--player-height);
+  height: calc(100% - var(--player-height));
+  width: 100%;
 }
 
 /******************************/
@@ -61,6 +62,7 @@ html, #app {
   box-sizing: border-box;
   display: block;
   grid-area: sidebar;
+  height: 591px;
   width: var(--sidebar-width);
 }
 
@@ -80,6 +82,7 @@ html, #app {
 footer>* {
   display: none;
 }
+
 /* DELETE End - These are temp styles  */
 
 #sidebar--home-link {
@@ -95,6 +98,7 @@ footer>* {
 
 #sidebar--playlist-nav {
   box-sizing: border-box;
+  min-height: var(--sidebar--playlist-nav-min-height);
   height: var(--sidebar--playlist-nav-height);
   margin: var(--sidebar--playlist-nav-margin);
   overflow-y: auto;
@@ -135,10 +139,11 @@ footer>* {
   align-self: flex-end;
   background-color: var(--player--bg);
   border-top: var(--border-thickness-1) solid var(--border-color);
+  bottom: 0;
   box-sizing: border-box;
   display: block;
   height: var(--player-height);
-  grid-area: player;
+  position: fixed;
   width: var(--player-width);
 }
 

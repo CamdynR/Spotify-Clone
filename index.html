@@ -27,64 +27,64 @@
 
 <body id="app">
 
-
-  <!-- Core collapsible header for the app -->
-  <header id="app--header"></header>
-
-
-  <!-- Omnipresent application sidebar - navigation & playlists -->
-  <nav id="app--sidebar">
-
-    <!-- Upper navigation section - non-playlist related -->
-    <section id="sidebar--upper-nav">
-
-      <!-- Spotify icon nav to home -->
-      <a href="/" title="Spotify" id="sidebar--home-link">
-        <img alt="Spotify Logo" src="assets/media/icons/spotify-logo.svg" />
-      </a>
-
-      <!-- Core nav buttons - Home / Search / Your Library -->
-      <div id="sidebar--core-nav">
-        <sp-nav-button data-page="Home">
-          <img slot="icon" alt="House" src="assets/media/icons/home.svg" draggable="false" />
-          <p slot="text">Home</p>
-        </sp-nav-button>
-        <sp-nav-button data-page="Search">
-          <img slot="icon" alt="Magnifying glass" src="assets/media/icons/magnifying-glass.svg" draggable="false" />
-          <p slot="text">Search</p>
-        </sp-nav-button>
-        <sp-nav-button data-page="Library">
-          <img slot="icon" alt="Books on bookshelf" src="assets/media/icons/books.svg" draggable="false" />
-          <p slot="text">Your Library</p>
-        </sp-nav-button>
-      </div>
-
-      <!-- Create Playlist & Liked Songs -->
-      <div id="sidebar--create-and-liked">
-        <sp-nav-button data-page="Create Playlist">
-          <div slot="icon" class="icon-wrapper" draggable="false">
-            <img alt="Plus sign" src="assets/media/icons/plus.svg" draggable="false" />
-          </div>
-          <p slot="text">Create Playlist</p>
-        </sp-nav-button>
-        <sp-nav-button data-page="Liked Songs" draggable="false">
-          <div slot="icon" class="icon-wrapper heart" draggable="false">
-            <img alt="Heart" src="assets/media/icons/heart.svg" draggable="false" />
-          </div>
-          <p slot="text">Liked Songs</p>
-        </sp-nav-button>
-      </div>
-
-    </section>
-
-    <!-- Playlist navigation section -->
-    <section id="sidebar--playlist-nav"></section>
-  </nav>
+  <div id="app-wrapper">
+    <!-- Core collapsible header for the app -->
+    <header id="app--header"></header>
 
 
-  <!-- Main Content - Where all of the routes will be displayed -->
-  <main id="app--main"></main>
+    <!-- Omnipresent application sidebar - navigation & playlists -->
+    <nav id="app--sidebar">
 
+      <!-- Upper navigation section - non-playlist related -->
+      <section id="sidebar--upper-nav">
+
+        <!-- Spotify icon nav to home -->
+        <a href="/" title="Spotify" id="sidebar--home-link">
+          <img alt="Spotify Logo" src="assets/media/icons/spotify-logo.svg" />
+        </a>
+
+        <!-- Core nav buttons - Home / Search / Your Library -->
+        <div id="sidebar--core-nav">
+          <sp-nav-button data-page="Home">
+            <img slot="icon" alt="House" src="assets/media/icons/home.svg" draggable="false" />
+            <p slot="text">Home</p>
+          </sp-nav-button>
+          <sp-nav-button data-page="Search">
+            <img slot="icon" alt="Magnifying glass" src="assets/media/icons/magnifying-glass.svg" draggable="false" />
+            <p slot="text">Search</p>
+          </sp-nav-button>
+          <sp-nav-button data-page="Library">
+            <img slot="icon" alt="Books on bookshelf" src="assets/media/icons/books.svg" draggable="false" />
+            <p slot="text">Your Library</p>
+          </sp-nav-button>
+        </div>
+
+        <!-- Create Playlist & Liked Songs -->
+        <div id="sidebar--create-and-liked">
+          <sp-nav-button data-page="Create Playlist">
+            <div slot="icon" class="icon-wrapper" draggable="false">
+              <img alt="Plus sign" src="assets/media/icons/plus.svg" draggable="false" />
+            </div>
+            <p slot="text">Create Playlist</p>
+          </sp-nav-button>
+          <sp-nav-button data-page="Liked Songs" draggable="false">
+            <div slot="icon" class="icon-wrapper heart" draggable="false">
+              <img alt="Heart" src="assets/media/icons/heart.svg" draggable="false" />
+            </div>
+            <p slot="text">Liked Songs</p>
+          </sp-nav-button>
+        </div>
+
+      </section>
+
+      <!-- Playlist navigation section -->
+      <section id="sidebar--playlist-nav"></section>
+    </nav>
+
+
+    <!-- Main Content - Where all of the routes will be displayed -->
+    <main id="app--main"></main>
+  </div>
 
   <footer id="app--player-control-bar">
 
@@ -110,6 +110,7 @@
     </sp-misc-controls>
 
   </footer>
+
 </body>
 
 </html>

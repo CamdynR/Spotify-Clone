@@ -35,7 +35,8 @@
   /* sidebar - core nav */
   --sidebar--core-btn-margin: 0 0 17px 0;
   /* sidebar - playlist nav */
-  --sidebar--playlist-nav-height: 232px;
+  --sidebar--playlist-nav-min-height: 150px;
+  --sidebar--playlist-nav-height: 50%;
   --sidebar--playlist-nav-margin: 0 5px 0 24px;
   --sidebar--playlist-nav-sb-width: 8px;
   --sidebar--playlist-nav-sb-border-rad: 8px;
