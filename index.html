@@ -7,21 +7,21 @@
   <title>Spotify - Web Player</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/media/icons/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/media/icons/favicon.ico" type="image/x-icon" />
 
   <!-- Fonts -->
   <!-- TODO -->
   
   <!-- Local Stylesheets -->
-  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="/assets/css/global.css" />
 
   <!-- Components -->
-  <script src="assets/components/sp-nav-button/component.js" type="module"></script>
-  <script src="assets/components/sp-nav-playlist/component.js" type="module"></script>
+  <script src="/assets/components/sp-nav-button/component.js" type="module"></script>
+  <script src="/assets/components/sp-nav-playlist/component.js" type="module"></script>
 
   <!-- Local Scripts -->
-  <script src="assets/js/router.js" type="module"></script>
-  <script src="assets/js/app.js" type="module"></script>
+  <script src="/assets/js/router.js" type="module"></script>
+  <script src="/assets/js/app.js" type="module"></script>
 </head>
 <body id="app">
 
@@ -38,7 +38,7 @@
 
       <!-- Spotify icon nav to home -->
       <a href="/" title="Spotify" id="sidebar--home-link">
-        <img alt="" src="assets/media/icons/spotify-logo.svg" />
+        <img alt="Spotify Logo" src="/assets/media/icons/spotify-logo.svg" />
       </a>
 
       <!-- Core nav buttons - Home / Search / Your Library -->
@@ -46,7 +46,7 @@
         <sp-nav-button data-page="Home">
           <img slot="icon" 
                alt="House" 
-               src="assets/media/icons/home.svg"
+               src="/assets/media/icons/home.svg"
                draggable="false"
           />
           <p slot="text">Home</p>
@@ -54,7 +54,7 @@
         <sp-nav-button data-page="Search">
           <img slot="icon" 
                 alt="Magnifying glass" 
-                src="assets/media/icons/magnifying-glass.svg"
+                src="/assets/media/icons/magnifying-glass.svg"
                 draggable="false"
           />
           <p slot="text">Search</p>
@@ -62,7 +62,7 @@
         <sp-nav-button data-page="Library">
           <img slot="icon"
                alt="Books on bookshelf"
-               src="assets/media/icons/books.svg"
+               src="/assets/media/icons/books.svg"
                draggable="false"
           />
           <p slot="text">Your Library</p>
@@ -74,7 +74,7 @@
         <sp-nav-button data-page="Create Playlist">
           <div slot="icon" class="icon-wrapper" draggable="false">
             <img alt="Plus sign"
-                 src="assets/media/icons/plus.svg"
+                 src="/assets/media/icons/plus.svg"
                  draggable="false"
             />
           </div>
@@ -83,7 +83,7 @@
         <sp-nav-button  data-page="Liked Songs" draggable="false">
           <div slot="icon" class="icon-wrapper heart" draggable="false">
             <img alt="Heart"
-                 src="assets/media/icons/heart.svg"
+                 src="/assets/media/icons/heart.svg"
                  draggable="false"
             />
           </div>
