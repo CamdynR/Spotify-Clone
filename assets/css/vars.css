@@ -2,9 +2,9 @@
 
 :root {
 
-  /**************/
-  /*** SIZING ***/
-  /**************/
+  /***********************/
+  /*** GLOBAL - SIZING ***/
+  /***********************/
 
   /*** main app ***/
   --main-height: 100%;
@@ -49,9 +49,9 @@
   --border-thickness-2: 1.5px;
 
 
-  /**************/
-  /*** COLORS ***/
-  /**************/
+  /***********************/
+  /*** GLOBAL - COLORS ***/
+  /***********************/
 
   /*** main ***/
   --main--bg: #121212;
@@ -69,10 +69,82 @@
   --border-color: #282828;
 
 
-  /************/
-  /*** MISC ***/
-  /************/
+  /*********************/
+  /*** GLOBAL - MISC ***/
+  /*********************/
 
   /*** sidebar ***/
   --sidebar--playlist-nav-transition: 0.2s linear background-color;
+
+
+  /***************************************************************/
+  /***************************************************************/
+  /***************************************************************/
+
+
+  /***************************/
+  /*** COMPONENTS - SIZING ***/
+  /***************************/
+
+  /*** sp-nav-button ***/
+  /* root */
+  --sp-nav-btn--root-col-gap: 16px;
+  --sp-nav-btn--root-tmp-cols: 24px auto;
+
+  /* ::slotted(p) */
+  --sp-nav-btn--p-font-size: 14px;
+  --sp-nav-btn--p-font-weight: 600;
+  --sp-nav-btn--p-margin: -2px 0 0 0;
+  --sp-nav-btn--p-padding: 0;
+
+  /* ::slotted(.icon-wrapper) */
+  --sp-nav-btn--icon-border-rd: 1px;
+  --sp-nav-btn--icon-height: 24px;
+  --sp-nav-btn--icon-weight: 24px;
+
+  /*** sp-nav-playlist ***/
+  /* host */
+  --sp-nav-play--margin: 16px 0;
+
+  /* root */
+  --sp-nav-play--font-size: 14px;
+
+  /* p */
+  --sp-nav-play--font-weight: 100;
+  --sp-nav-play--margin: 0;
+
+
+  /***************************/
+  /*** COMPONENTS - COLOR ***/
+  /***************************/
+
+  /*** sp-nav-button ***/
+  /* ::slotted(p) */
+  --sp-nav-btn--p-color: white;
+
+  /* ::slotted(.icon-wrapper) */
+  --sp-nav-btn--icon-bg-color: white;
+
+  /* ::slotted(.icon-wrapper.heart) */
+  --sp-nav-btn--heart-bg: linear-gradient(135deg, #450af5, #c4efd9);
+
+  /*** sp-nav-playlist ***/
+  /* root */
+  --sp-nav-play--color: white;
+
+
+  /***************************/
+  /*** COMPONENTS - MISC ***/
+  /***************************/
+
+  /*** sp-nav-button ***/
+  /* root */
+  --sp-nav-btn--opacity: 0.7;
+  --sp-nav-btn--opacity-hover: 1;
+  --sp-nav-btn--transition: 0.2s linear opacity;
+
+  /*** sp-nav-playlist ***/
+  /* root */
+  --sp-nav-play--opacity: 0.7;
+  --sp-nav-play--opacity-hover: 1;
 }
