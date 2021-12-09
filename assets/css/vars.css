@@ -104,14 +104,14 @@
 
   /*** sp-nav-playlist ***/
   /* host */
-  --sp-nav-play--margin: 16px 0;
+  --sp-nav-play--host-margin: 16px 0;
 
   /* root */
-  --sp-nav-play--font-size: 14px;
+  --sp-nav-play--root-font-size: 14px;
 
   /* p */
-  --sp-nav-play--font-weight: 100;
-  --sp-nav-play--margin: 0;
+  --sp-nav-play--p-font-weight: 100;
+  --sp-nav-play--p-margin: 0;
 
 
   /***************************/
@@ -130,7 +130,7 @@
 
   /*** sp-nav-playlist ***/
   /* root */
-  --sp-nav-play--color: white;
+  --sp-nav-play--root-color: white;
 
 
   /***************************/
@@ -139,12 +139,12 @@
 
   /*** sp-nav-button ***/
   /* root */
-  --sp-nav-btn--opacity: 0.7;
-  --sp-nav-btn--opacity-hover: 1;
-  --sp-nav-btn--transition: 0.2s linear opacity;
+  --sp-nav-btn--root-opacity: 0.7;
+  --sp-nav-btn--root-opacity-hover: 1;
+  --sp-nav-btn--root-transition: 0.2s linear opacity;
 
   /*** sp-nav-playlist ***/
   /* root */
-  --sp-nav-play--opacity: 0.7;
-  --sp-nav-play--opacity-hover: 1;
+  --sp-nav-play--root-opacity: 0.7;
+  --sp-nav-play--root-opacity-hover: 1;
 }

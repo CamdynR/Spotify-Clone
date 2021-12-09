@@ -56,22 +56,22 @@
 /*************************/
 
 :host(sp-nav-playlist) {
-  margin: var(--sp-nav-play--margin);
+  margin: var(--sp-nav-play--host-margin);
 }
 
 .sp-nav-playlist.root {
-  color: var(--sp-nav-play--color);
-  font-size: var(--sp-nav-play--font-size);
-  opacity: var(--sp-nav-play--opacity);
+  color: var(--sp-nav-play--root-color);
+  font-size: var(--sp-nav-play--root-font-size);
+  opacity: var(--sp-nav-play--root-opacity);
   user-select: none;
 }
 
 .sp-nav-playlist.root:hover {
   cursor: pointer;
-  opacity: var(--sp-nav-play--opacity-hover);
+  opacity: var(--sp-nav-play--root-opacity-hover);
 }
 
 .sp-nav-playlist p {
-  font-weight: var(--sp-nav-play--font-weight);
-  margin: var(--sp-nav-play--margin);
+  font-weight: var(--sp-nav-play--p-font-weight);
+  margin: var(--sp-nav-play--p-margin);
 }
