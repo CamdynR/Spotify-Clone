@@ -72,6 +72,10 @@
 }
 
 .sp-nav-playlist p {
+  font-family: 'circular-book';
   font-weight: var(--sp-nav-play--p-font-weight);
   margin: var(--sp-nav-play--p-margin);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

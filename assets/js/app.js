@@ -57,28 +57,40 @@ function getPlaylists() {
     title: 'skrrt skrrt',
     route: ''
   }, {
-    title: 'Spotify Wrapped 2021',
+    title: 'Forza Horizon 5 - Hospital Records Radio (Fanmade)',
     route: ''
   }, {
-    title: 'Discover Weekly',
+    title: 'Forza Horizon Bass Arena Radio',
     route: ''
   }, {
-    title: 'Release Radar',
+    title: 'Forza Horizon 5 Soundtrack',
     route: ''
   }, {
-    title: 'Fresh Finds',
+    title: 'Tommy + Camdyn',
     route: ''
   }, {
-    title: 'Your Top Songs 2021',
+    title: 'caffeinated & ready 2 rip',
     route: ''
   }, {
-    title: 'Your Artists Revealed',
+    title: 'Hallowed Bangers',
     route: ''
   }, {
-    title: 'Brews or Brews',
+    title: 'Lorem',
     route: ''
   }, {
-    title: 'skrrt skrrt',
+    title: 'All New Indie',
+    route: ''
+  }, {
+    title: '🌱olya🌱 + Camdyn',
+    route: ''
+  }, {
+    title: 'Classic Alt',
+    route: ''
+  }, {
+    title: 'Noah + Camdyn',
+    route: ''
+  }, {
+    title: '// TODO',
     route: ''
   }];
 }

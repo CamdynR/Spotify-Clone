@@ -7,19 +7,19 @@
   /***********************/
 
   /*** main app ***/
-  --main-height: 100%;
-  --main-margin: 0;
-  --main-padding: 0;
-  --main-width: 100%;
+  --main--height: 100%;
+  --main--margin: 0;
+  --main--padding: 0;
+  --main--width: 100%;
 
   /*** header ***/
-  --header-height: 64px;
-  --header-width: 100%;
+  --header--height: 64px;
+  --header--width: 100%;
 
   /*** sidebar ***/
   /* sidebar - main */
-  --sidebar-height: 100%;
-  --sidebar-width: 241px;
+  --sidebar--height: 100%;
+  --sidebar--width: 241px;
   /* sidebar - upper-nav */
   --sidebar--upper-nav-margin: 24.26px 24px 0;
   --sidebar--upper-nav-height: 296px;
@@ -31,19 +31,19 @@
   --sidebar--home-svg-width: auto;
   /* sidebar - create & liked */
   --sidebar--create-liked-margin: 40px 0 0 0;
-  --sidebar--create-liked-spnb-margin: 0 0 15px 0;
+  --sidebar--create-liked-spnb-margin: 0 0 16px 0;
   /* sidebar - core nav */
-  --sidebar--core-btn-margin: 0 0 17px 0;
+  --sidebar--core-btn-margin: 0 0 16px 0;
   /* sidebar - playlist nav */
   --sidebar--playlist-nav-min-height: 150px;
-  --sidebar--playlist-nav-height: 50%;
-  --sidebar--playlist-nav-margin: 0 5px 0 24px;
+  --sidebar--playlist-nav-height: 100%;
+  --sidebar--playlist-nav-margin: 2px 24px 0 24px;
   --sidebar--playlist-nav-sb-width: 8px;
   --sidebar--playlist-nav-sb-border-rad: 8px;
 
   /*** player ***/
-  --player-height: 91px;
-  --player-width: 100%;
+  --player--height: 91px;
+  --player--width: 100%;
 
   /*** misc ***/
   --border-thickness-1: 1px;
@@ -95,7 +95,7 @@
   /* ::slotted(p) */
   --sp-nav-btn--p-font-size: 14px;
   --sp-nav-btn--p-font-weight: 400;
-  --sp-nav-btn--p-margin: 2px 0 0 0;
+  --sp-nav-btn--p-margin: 0;
   --sp-nav-btn--p-padding: 0;
 
   /* ::slotted(.icon-wrapper) */
@@ -105,13 +105,13 @@
 
   /*** sp-nav-playlist ***/
   /* host */
-  --sp-nav-play--host-margin: 16px 0;
+  --sp-nav-play--host-margin: 15.2px 0 0 0;
 
   /* root */
   --sp-nav-play--root-font-size: 14px;
 
   /* p */
-  --sp-nav-play--p-font-weight: 100;
+  --sp-nav-play--p-font-weight: 500;
   --sp-nav-play--p-margin: 0;
 
 

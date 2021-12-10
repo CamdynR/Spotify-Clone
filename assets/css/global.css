@@ -6,10 +6,6 @@
 /*** GLOBAL - Generic Global Styles ***/
 /**************************************/
 
-* {
-  font-family: sans-serif;
-}
-
 body {
   overscroll-behavior: none;
 }
@@ -20,16 +16,10 @@ body {
 
 html, #app {
   background-color: var(--main--bg);
-  height: var(--main-height);
-  margin: var(--main-margin);
-  padding: var(--main-padding);
-  width: var(--main-width);
-}
-
-#app--main {
-  grid-area: main;
-  height: var(--main-height);
-  width: var(--main-width);
+  height: var(--main--height);
+  margin: var(--main--margin);
+  padding: var(--main--padding);
+  width: var(--main--width);
 }
 
 #app-wrapper {
@@ -37,10 +27,16 @@ html, #app {
   grid-template-areas:
     "sidebar header"
     "sidebar main";
-  grid-template-columns: var(--sidebar-width) auto;
-  grid-template-rows: var(--header-height) auto var(--player-height);
-  height: calc(100% - var(--player-height));
+  grid-template-columns: var(--sidebar--width) auto;
+  grid-template-rows: var(--header--height) auto;
+  height: calc(100% - var(--player--height));
   width: 100%;
+}
+
+#app--main {
+  grid-area: main;
+  height: var(--main--height);
+  width: var(--main--width);
 }
 
 /******************************/
@@ -49,8 +45,8 @@ html, #app {
 
 #app--header {
   grid-area: header;
-  height: var(--header-height);
-  width: var(--header-width);
+  height: var(--header--height);
+  width: var(--header--width);
 }
 
 /********************************/
@@ -60,10 +56,14 @@ html, #app {
 #app--sidebar {
   background-color: var(--sidebar--bg);
   box-sizing: border-box;
-  display: block;
+  display: grid;
   grid-area: sidebar;
-  height: 591px;
-  width: var(--sidebar-width);
+  grid-template-areas:
+    'upperNav'
+    'playlists';
+  grid-template-rows: 321.76px calc(100% - 321.76px);
+  height: var(--sidebar--height);
+  width: var(--sidebar--width);
 }
 
 #sidebar--core-nav sp-nav-button:not(:last-child) {
@@ -98,10 +98,12 @@ footer>* {
 
 #sidebar--playlist-nav {
   box-sizing: border-box;
-  min-height: var(--sidebar--playlist-nav-min-height);
+  display: flex;
+  flex-direction: column;
+  /* min-height: var(--sidebar--playlist-nav-min-height); */
   height: var(--sidebar--playlist-nav-height);
   margin: var(--sidebar--playlist-nav-margin);
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 #sidebar--playlist-nav::-webkit-scrollbar {
@@ -142,9 +144,9 @@ footer>* {
   bottom: 0;
   box-sizing: border-box;
   display: block;
-  height: var(--player-height);
+  height: var(--player--height);
   position: fixed;
-  width: var(--player-width);
+  width: var(--player--width);
 }
 
 /***********************************/
