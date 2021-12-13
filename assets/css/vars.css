@@ -12,6 +12,12 @@
   --main--padding: 0;
   --main--width: 100%;
 
+  /*** main app wrapper ***/
+  --main-wrapper--height: calc(100% - var(--player--height));
+  --main-wrapper--template-columns: var(--sidebar--width) auto;
+  --main-wrapper--template-rows: var(--header--height) auto;
+  --main-wrapper--width: 100%;
+
   /*** header ***/
   --header--height: 64px;
   --header--width: 100%;
@@ -19,6 +25,7 @@
   /*** sidebar ***/
   /* sidebar - main */
   --sidebar--height: 100%;
+  --sidebar--template-rows: 321.76px 1fr;
   --sidebar--width: 241px;
   /* sidebar - upper-nav */
   --sidebar--upper-nav-margin: 24.26px 24px 0;
@@ -36,12 +43,14 @@
   --sidebar--core-btn-margin: 0 0 16px 0;
   /* sidebar - playlist nav */
   --sidebar--playlist-nav-min-height: 150px;
-  --sidebar--playlist-nav-height: 100%;
-  --sidebar--playlist-nav-margin: 2px 24px 0 24px;
+  --sidebar--playlist-nav-height: calc(100% - 3px);
+  --sidebar--playlist-nav-margin: 2px 4px 0 24px;
+  --sidebar--playlist-nav-padding: 0 20px 0 0;
   --sidebar--playlist-nav-sb-width: 8px;
   --sidebar--playlist-nav-sb-border-rad: 8px;
 
   /*** player ***/
+  --player--bottom: 0;
   --player--height: 91px;
   --player--width: 100%;
 
